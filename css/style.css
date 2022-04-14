@@ -1,0 +1,39 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    font-size: 2em;
+    text-align: center;
+}
+
+fieldset {
+    width: 15em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.pagina {
+    text-align: center;
+    position: absolute;
+    margin-top: 8em;
+    width: 10em;
+}
+
+#pg1 {
+    margin-left: 5em;
+}
+
+#pg2 {
+
+}
+
+#pg3 {
+
+}
