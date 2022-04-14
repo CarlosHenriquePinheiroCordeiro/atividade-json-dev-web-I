@@ -1,18 +1,23 @@
 Montar uma interface.
-
+------------------------------------------------------------------------------------------------------------------------------------------------
 Página 1:
-()O usuário deve informar quantos valores ele deseja
-()O usuário deve informar qual vai ser o início
-()O usuário deve informar qual vai ser o fim
-()Deve ter um botão para gerar o arquivo com os valores informados
-()Arquivo gerado: "valores.json"
-
+(X)Escolher quantos números serão gerados;
+(X)Parâmetro para menor e maior números gerados;
+()Escolher um nome de arquivo .json onde os valores serão armazenados;
+------------------------------------------------------------------------------------------------------------------------------------------------
 Página 2:
-()Usuário deve informar o nome do arquivo que ele deseja abrir (usualmente sendo "valores.json")
-()Deve ter um botão de "Abrir"
-()Quando abrir o arquivo, deve mostrar todos os itens da última atividade das listas, e ainda a Mediana.
-
+()Possibilidade de abrir o arquivo e mostrar as seguintes informações:
+    ()Maior;
+    ()Menor;
+    ()Pares;
+    ()Ímpares;
+    ()Soma;
+    ()Média;
+    ()Elementos acima da média;
+    ()Elementos abaixo da média;
+    ()Primos;
+    ()Mediana;
+------------------------------------------------------------------------------------------------------------------------------------------------
 Página 3:
-()Usuário deve informar o nome do arquivo que ele deseja abrir (usualmente sendo "valores.json")
-()Deve ter um botão de "Abrir"
-()Gerar um gráfico com valores do arquivo json
+()Possibilidade de abrir um arquivo .json e gerar o gráfico (indico usar google charts).
+------------------------------------------------------------------------------------------------------------------------------------------------

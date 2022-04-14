@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="css/general-style.css">
-        <title>Página 2</title>
+        <title>Página 3</title>
     </head>
     <body>
         
