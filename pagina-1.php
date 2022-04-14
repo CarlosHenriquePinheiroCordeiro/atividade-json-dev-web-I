@@ -1,10 +1,10 @@
-<!DOCTYPE html>
 <?php
     $iQtdValores  = isset($_POST['qtdValores'])  ? $_POST['qtdValores']  : 0;
     $iValorMinimo = isset($_POST['min'])         ? $_POST['min']         : 0;
     $iValorMaximo = isset($_POST['max'])         ? $_POST['max']         : 0;
     $sNomeArquivo = isset($_POST['nomeArquivo']) ? $_POST['nomeArquivo'] : '';
 ?>
+<!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
@@ -16,7 +16,7 @@
         <hr>
         <a href="index.php">Home</a>
         <a href="pagina-2.php">Página 2 - Abrir arquivo e gerar cálculos</a>
-        <a href="pagina-2.php">Página 3 - Abrir arquivo e gerar gráfico</a>
+        <a href="pagina-3.php">Página 3 - Abrir arquivo e gerar gráfico</a>
         <hr>
         <h1>Página 1 - Informar valores</h1>
         <hr>

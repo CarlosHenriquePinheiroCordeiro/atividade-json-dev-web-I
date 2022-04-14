@@ -3,7 +3,7 @@ Montar uma interface.
 Página 1:
 (X)Escolher quantos números serão gerados;
 (X)Parâmetro para menor e maior números gerados;
-()Escolher um nome de arquivo .json onde os valores serão armazenados;
+(X)Escolher um nome de arquivo .json onde os valores serão armazenados;
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Página 2:
 ()Possibilidade de abrir o arquivo e mostrar as seguintes informações:
@@ -19,5 +19,5 @@ Página 2:
     ()Mediana;
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Página 3:
-()Possibilidade de abrir um arquivo .json e gerar o gráfico (indico usar google charts).
+(X)Possibilidade de abrir um arquivo .json e gerar o gráfico (indico usar google charts).
 ------------------------------------------------------------------------------------------------------------------------------------------------

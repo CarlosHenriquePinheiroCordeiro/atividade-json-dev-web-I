@@ -3,14 +3,6 @@ fieldset {
     padding: 0.8em;
 }
 
-a {
-    padding: 1em;
-}
-
-.fieldCampo {
-    padding: 0.5em;
-}
-
 .msg {
     position: absolute;
     margin-top: 3em;

@@ -2,6 +2,14 @@ body {
     background-color: antiquewhite;
 }
 
+a {
+    padding: 1em;
+}
+
+.fieldCampo {
+    padding: 0.5em;
+}
+
 h1 {
     text-align: center;
     font-size: 3em;
