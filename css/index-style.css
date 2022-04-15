@@ -4,29 +4,29 @@ a {
 }
 
 fieldset {
-    width: 25em;
-    height: 25em;
+    width: 20em;
+    height: 20em;
 }
 
 p {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .pagina {
     text-align: center;
     position: absolute;
     margin-top: 10em;
-    width: 10em;
+    width: 1em;
 }
 
 #pg1 {
-    margin-left: 4.5em;
+    margin-left: 4em;
 }
 
 #pg2 {
-    margin-left: 46em;
+    margin-left: 48em;
 }
 
 #pg3 {
-    margin-left: 86em;
+    margin-left: 92em;
 }
