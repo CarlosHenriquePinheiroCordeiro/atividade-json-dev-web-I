@@ -30,22 +30,21 @@
                 try {
                     $oConteudo = file_get_contents($sNomeArquivo.'.json');
                     if ($oConteudo) {
-
+                        $aValores  = json_decode($oConteudo);
+                        echo resultado('Maior Número'               , maiorNumero($aValores));
+                        echo resultado('Menor Número'               , menorNumero($aValores));
+                        echo resultado('Números Pares'              , pares($aValores));
+                        echo resultado('Números Ímpares'            , impares($aValores));
+                        echo resultado('Soma'                       , soma($aValores));
+                        echo resultado('Média'                      , media($aValores));
+                        echo resultado('Elementos acima da média'   , acimaMedia($aValores));
+                        echo resultado('Elementos abaixo da média'  , abaixoMedia($aValores));
+                        echo resultado('Números Primos'             , primos($aValores));
+                        echo resultado('Mediana'                    , mediana($aValores));
                     }
                     else {
                         mensagemErro('Ocorreu um erro ao tentar ler o arquivo '.$sNomeArquivo.'.json');
                     }
-                    // $aValores  = json_decode($oConteudo);
-                    // echo resultado('Maior Número'               , maiorNumero($aValores));
-                    // echo resultado('Menor Número'               , menorNumero($aValores));
-                    // echo resultado('Números Pares'              , pares($aValores));
-                    // echo resultado('Números Ímpares'            , impares($aValores));
-                    // echo resultado('Soma'                       , soma($aValores));
-                    // echo resultado('Média'                      , media($aValores));
-                    // echo resultado('Elementos acima da média'   , acimaMedia($aValores));
-                    // echo resultado('Elementos abaixo da média'  , abaixoMedia($aValores));
-                    // echo resultado('Números Primos'             , primos($aValores));
-                    // echo resultado('Mediana'                    , mediana($aValores));
                 } catch (Exception $eException) {
                     mensagemErro('Um erro inesperado aconteceu.');
                 }
@@ -158,12 +157,12 @@
 
             function mediana($aValores) {
                 $aNumeros   = $aValores;
-                $iMeioArray = ceil(count($aNumeros) / 2);
+                $iMeioArray = floor(count($aNumeros) / 2);
                 sort($aNumeros);
                 if (count($aNumeros) % 2 != 0) {
-                    return $aNumeros[$iMeioArray];
+                    return $aNumeros[$iMeioArray - 1];
                 }
-                return ($aNumeros[$iMeioArray - 1] + $aNumeros[$iMeioArray]) / 2;
+                return ($aNumeros[$iMeioArray - 2] + $aNumeros[$iMeioArray - 1]) / 2;
             }
 
             function mensagemErro($sConteudo) {
