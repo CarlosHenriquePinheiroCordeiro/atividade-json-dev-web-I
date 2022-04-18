@@ -157,12 +157,12 @@
 
             function mediana($aValores) {
                 $aNumeros   = $aValores;
-                $iMeioArray = floor(count($aNumeros) / 2);
+                $iMeioArray = floor((count($aNumeros) + 1) / 2) - 1;
                 sort($aNumeros);
                 if (count($aNumeros) % 2 != 0) {
-                    return $aNumeros[$iMeioArray - 1];
+                    return $aNumeros[$iMeioArray];
                 }
-                return ($aNumeros[$iMeioArray - 2] + $aNumeros[$iMeioArray - 1]) / 2;
+                return ($aNumeros[$iMeioArray - 1] + $aNumeros[$iMeioArray]) / 2;
             }
 
             function mensagemErro($sConteudo) {
