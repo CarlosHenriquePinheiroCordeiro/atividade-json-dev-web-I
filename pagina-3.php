@@ -59,5 +59,10 @@
             chart.draw(data, options);
         }
         </script>
+        <?php
+            if ($sNomeArquivo != '') {
+                echo '<div id="graficoValores" style="width: 900px; height: 500px"></div>';
+            }
+        ?>
     </body>
 </html>
