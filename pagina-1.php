@@ -1,7 +1,7 @@
 <?php
-    $iQtdValores  = isset($_POST['qtdValores'])  ? $_POST['qtdValores']  : 0;
-    $iValorMinimo = isset($_POST['min'])         ? $_POST['min']         : 0;
-    $iValorMaximo = isset($_POST['max'])         ? $_POST['max']         : 0;
+    $iQtdValores  = isset($_POST['qtdValores'])  ? $_POST['qtdValores']  : '';
+    $iValorMinimo = isset($_POST['min'])         ? $_POST['min']         : '';
+    $iValorMaximo = isset($_POST['max'])         ? $_POST['max']         : '';
     $sNomeArquivo = isset($_POST['nomeArquivo']) ? $_POST['nomeArquivo'] : '';
 ?>
 <!DOCTYPE html>
@@ -51,7 +51,7 @@
         </form>
         
         <?php
-            if ($iQtdValores > 0 && $iValorMinimo > 0 && $iValorMaximo > 0 && $sNomeArquivo != '') {
+            if ($iQtdValores != '' && $iValorMinimo != '' && $iValorMaximo != '' && $sNomeArquivo != '') {
                 $aValores = [];
                 for ($i = 0; $i < $iQtdValores; $i++) {
                     $aValores[] = rand($iValorMinimo, $iValorMaximo);
